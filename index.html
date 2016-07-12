@@ -16,11 +16,12 @@
     <div id="navbar">
   <div class="container">
     <nav class="navbar navbar-dark bg-inverse">
+      <a class="navbar-brand pull-xs-left" href="/">Judownmo</a>
       <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
       </button>
-      <a class="navbar-brand" href="/">Judownmo</a>
-      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2" style="width:100%;">
         <div class="nav navbar-nav pull-xs-left">
           <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
 <a class="nav-item nav-link" href="#">Features</a>
@@ -29,7 +30,7 @@
         </div>
         <form class="form-inline pull-xs-right">
           <input class="search form-control text-xs-right" type="text" placeholder="Search">
-          <button class="btn btn-outline-info" type="submit"><i class="mdi mdi-magnify"></i></button>          
+          <button class="btn btn-outline-info" type="submit"><i class="mdi mdi-magnify"></i></button> 
         </form>
       </div>
     </nav>
@@ -41,14 +42,36 @@
     
     <div class="col-md-3">
       <div class="card">
+        <img class="card-img-top img-fluid" src="/assets/images/little-man.png" alt="">
+        <div class="card-block">
+          <h5 class="card-title"><a href="/movie/2016/07/11/hello-world/">Hello World</a></h5>
+          <!-- <p class="card-text">
+</p> -->
+          <p class="card-text"><small class="text-muted">Jul 11, 2016</small></p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Donwload
+            </button>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="" target="_blank">Fast Download</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="card">
         <img class="card-img-top img-fluid" src="/assets/images/everest_movie_poster.jpg" alt="">
         <div class="card-block">
-          <h4 class="card-title"><a href="/movie/2016/07/09/everest-2015-bluray-720p/">Everest 2015 BluRay 720p</a></h4>
+          <h5 class="card-title"><a href="/movie/2016/07/09/everest-2015-bluray-720p/">Everest 2015 BluRay 720p</a></h5>
           <!-- <p class="card-text">
 </p> -->
           <p class="card-text"><small class="text-muted">Jul 9, 2016</small></p>
           <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Donwload
             </button>
             <div class="dropdown-menu">
@@ -65,12 +88,12 @@
       <div class="card">
         <img class="card-img-top img-fluid" src="/assets/images/a-walk-in-the-woods.jpg" alt="">
         <div class="card-block">
-          <h4 class="card-title"><a href="/movie/2016/07/09/a-walk-in-the-woods-2015-bluray-720p/">A Walk in the Woods 2015 BluRay 720p</a></h4>
+          <h5 class="card-title"><a href="/movie/2016/07/09/a-walk-in-the-woods-2015-bluray-720p/">A Walk in the Woods 2015 BluRay 720p</a></h5>
           <!-- <p class="card-text">
 </p> -->
           <p class="card-text"><small class="text-muted">Jul 9, 2016</small></p>
           <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Donwload
             </button>
             <div class="dropdown-menu">
@@ -84,7 +107,11 @@
     </div>
     
     <div class="col-md-12">
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div class="col-sm-12 col-md-3 col-lg-2">
+        <a href=" /movie/archives "><i class="mdi mdi-library-books" style="font-size: 30px;"></i> Movie Archive</a>
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-4 push-lg-2 paginator">
+        <div class="btn-group" role="group" aria-label="Basic example">
         
           <a href="" type="button" class="btn btn-secondary disabled" >Previous</a>
         
@@ -92,8 +119,11 @@
         
           <a href="" class="btn btn-secondary disabled">Next</a>
         
+        </div>
       </div>
-      <p class="rss-subscribe pull-xs-right">subscribe <a href="/feed.xml">via RSS <i class="mdi mdi-rss-box" style="font-size:30px; color:#F37538;"></i></a></p>
+      <div class="col-sm-12 col-md-4 col-lg-3 push-lg-3">
+        <p class="rss-subscribe pull-xs-right">subscribe <a href="/feed.xml">via RSS <i class="mdi mdi-rss-box" style="font-size:30px; color:#F37538;"></i></a></p>  
+      </div>
     </div>
   </div>
 </div>

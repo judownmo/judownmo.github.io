@@ -5,9 +5,20 @@
     <description>free download movie</description>
     <link>https://judomo.github.io/</link>
     <atom:link href="https://judomo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Jul 2016 17:57:35 +0700</pubDate>
-    <lastBuildDate>Sat, 09 Jul 2016 17:57:35 +0700</lastBuildDate>
+    <pubDate>Tue, 12 Jul 2016 11:07:00 +0700</pubDate>
+    <lastBuildDate>Tue, 12 Jul 2016 11:07:00 +0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Hello World</title>
+        <description>
+</description>
+        <pubDate>Mon, 11 Jul 2016 19:47:52 +0700</pubDate>
+        <link>https://judomo.github.io/movie/2016/07/11/hello-world/</link>
+        <guid isPermaLink="true">https://judomo.github.io/movie/2016/07/11/hello-world/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Everest 2015 BluRay 720p</title>
