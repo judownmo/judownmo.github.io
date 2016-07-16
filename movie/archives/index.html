@@ -15,27 +15,32 @@
 
   <body>
     <div id="navbar">
-  <div class="container">
-    <nav class="navbar navbar-dark bg-inverse">
+  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container">
       <a class="navbar-brand pull-xs-left" href="/">Judownmo</a>
       <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
       </button>
       
       <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2" style="width:100%;">
-        <div class="nav navbar-nav pull-xs-left">
+        <div class="nav navbar-nav pull-xs-right">
           <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-<a class="nav-item nav-link" href="#">Features</a>
+<a class="nav-item nav-link" href="/category">Kategori</a>
 <a class="nav-item nav-link" href="#">Request movie</a>
 
         </div>
-        <form class="form-inline pull-xs-right">
-          <input class="search form-control text-xs-right" type="text" placeholder="Search">
-          <button class="btn btn-outline-info" type="submit"><i class="mdi mdi-magnify"></i></button> 
-        </form>
+        <div class="col-md-5 offset-md-0 col-lg-6 offset-lg-1">
+          <form class="form-inline bd-search pull-xs-left" style="width:100%;">
+            <div class="input-group">
+              <input class="form-control" data-toggle="dropdown" id="search-input" placeholder="Search..." autocomplete="off" type="text" style="width:100%;">
+              <span class="input-group-addon"><i class="mdi mdi-magnify"></i></span>
+              <div class="bd-search-results dropdown-menu" id="search-results"></div>
+            </div>
+          </form>
+        </div>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </div>
 
       <div id="page">
@@ -1024,5 +1029,16 @@
 
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/jekyll-search.min.js"></script>
+
+	<script>
+	SimpleJekyllSearch.init({
+	  searchInput: document.getElementById('search-input'),
+	  resultsContainer: document.getElementById('search-results'),
+	  searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+	  noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+	  json: '/search.json'
+	})
+	</script>
   </body>
 </html>

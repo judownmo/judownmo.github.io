@@ -5040,7 +5040,7 @@
   -ms-filter: "FlipV"; }
 
 #index {
-  margin-top: 1rem; }
+  margin-top: 60px; }
   #index .card {
     border: 1px solid rgba(0, 0, 0, 0.075);
     border-bottom-color: rgba(0, 0, 0, 0.125);
@@ -5067,23 +5067,58 @@
     padding-right: unset;
     margin: 7px; }
 
+.bd-search {
+  position: relative; }
+
+.bd-search .form-control {
+  height: 2.45rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  background-color: #fafafa; }
+
+.bd-search-results {
+  right: 0;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  font-size: .9rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.05); }
+
 #navbar {
-  margin-top: 1rem; }
-  #navbar .search {
-    background-color: #373A3C;
+  margin-top: 1rem;
+  /*.search{
+    background-color: #46484A;
     color: #fff;
-    border-bottom: 1px solid #373A3C !important;
-    border: unset; }
-  #navbar .search:focus {
+  }
+  .search:focus{
+    background-color: #fff;
+    color: #373A3C; 
+  }*/ }
+  #navbar .dropdown-item:hover {
+    background-color: #e6e6e6; }
+  #navbar .input-group {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    background-color: #46484A;
+    color: #fff; }
+  #navbar .form-control {
     border: unset;
-    border-bottom: 1px solid #5BC0DD !important;
-    border-radius: unset; }
+    background-color: transparent;
+    color: inherit; }
+  #navbar .input-group-addon {
+    background-color: transparent;
+    color: inherit;
+    border: unset;
+    border-left: 1px solid rgba(0, 0, 0, 0.15); }
+  #navbar .open {
+    background-color: #fff;
+    color: #46484A; }
 
 #post {
-  margin: 1rem 0; }
+  margin: 70px 0; }
 
 #page {
-  margin: 1rem 0; }
+  margin: 60px 0; }
 
 .paginator .btn-secondary:hover {
   background-color: #fff;
@@ -5110,6 +5145,15 @@
   .others-link li + li {
     margin-left: 1rem; }
 
+.embed-responsive {
+  margin: 20px 0; }
+
+@media (max-width: 544px) {
+  .navbar-nav {
+    width: 100%; }
+
+  #index .card {
+    width: 18rem; } }
 /*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
